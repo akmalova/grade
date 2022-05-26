@@ -9,7 +9,8 @@ public class UnlockDiscipline {
     
     public UnlockDiscipline() {
         
-        disciplineId = JOptionPane.showInputDialog(null, "Введите идентификатор дисциплины",
+        disciplineId = JOptionPane.showInputDialog(null, 
+                "Введите идентификатор дисциплины",
                 "Очистить и разблокировать дисциплину", JOptionPane.INFORMATION_MESSAGE);
         if (disciplineId != null) {
             if (disciplineId.equals(""))
@@ -32,16 +33,19 @@ public class UnlockDiscipline {
             res.next();
             int result = res.getInt(1);
             if (result == -1)
-                JOptionPane.showMessageDialog(null, "Дисциплина уже очищена и разблокирована", 
+                JOptionPane.showMessageDialog(null, 
+                        "Дисциплина уже очищена и разблокирована", 
                         "Сервис БРС", JOptionPane.WARNING_MESSAGE); 
             else 
-                JOptionPane.showMessageDialog(null, "Дисциплина успешно очищена и разблокирована."
+                JOptionPane.showMessageDialog(null, 
+                        "Дисциплина успешно очищена и разблокирована."
                         + "Количество удаленных записей: " + result + 1, 
-                    "Сервис БРС", JOptionPane.INFORMATION_MESSAGE);
+                        "Сервис БРС", JOptionPane.INFORMATION_MESSAGE);
         } 
         catch (SQLException e) {
             System.out.println(e.getMessage());
-            JOptionPane.showMessageDialog(null, "Не удалось очистить и разблокировать дисциплину", 
+            JOptionPane.showMessageDialog(null, 
+                    "Не удалось очистить и разблокировать дисциплину", 
                     "Сервис БРС", JOptionPane.WARNING_MESSAGE);
         }
     }

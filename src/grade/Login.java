@@ -101,7 +101,8 @@ public class Login extends JFrame {
     private void readUrl() {
         
         try {
-            FileInputStream fis = new FileInputStream("nbproject/private/config.properties");
+            FileInputStream fis = new FileInputStream(
+                    "nbproject/private/config.properties");
             properties.load(fis);
             properties.getProperty("url");
         }

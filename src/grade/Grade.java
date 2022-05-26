@@ -44,7 +44,8 @@ public class Grade extends JFrame {
         findStudentByName.addActionListener((event) -> findStudentByNamePerformed());
         studentMenu.add(findStudentByName);
         
-        JMenuItem findStudentByNum = new JMenuItem("Поиск студента по номеру зачетной книжки");
+        JMenuItem findStudentByNum = new JMenuItem(
+                "Поиск студента по номеру зачетной книжки");
         findStudentByNum.setFont(font);
         findStudentByNum.addActionListener((event) -> findStudentByNumPerformed());
         studentMenu.add(findStudentByNum);
@@ -54,7 +55,8 @@ public class Grade extends JFrame {
         studentIfoByName.addActionListener((event) -> studentInfoByNamePerformed());
         studentMenu.add(studentIfoByName);
         
-        JMenuItem studentInfoByNum = new JMenuItem("Информация о студенте по номеру зачетной книжки");
+        JMenuItem studentInfoByNum = new JMenuItem(
+                "Информация о студенте по номеру зачетной книжки");
         studentInfoByNum.setFont(font);
         studentInfoByNum.addActionListener((event) -> studentInfoByNumPerformed());
         studentMenu.add(studentInfoByNum);
@@ -77,14 +79,16 @@ public class Grade extends JFrame {
         teachersList.addActionListener((event) -> facultyTeachersListPerformed());
         teacherMenu.add(teachersList);
         
-        JMenuItem teacherDisciplines = new JMenuItem("Список дисциплин, закрпеленных за преподавателем");
+        JMenuItem teacherDisciplines = new JMenuItem(
+                "Список дисциплин, закрпеленных за преподавателем");
         teacherDisciplines.setFont(font);
         teacherDisciplines.addActionListener((event) -> teacherDisciplinesPerformed());
         teacherMenu.add(teacherDisciplines);
         
         JMenu disciplineMenu = new JMenu("Работа с дисциплинами");
         disciplineMenu.setFont(font);
-        JMenuItem unlockDiscipline = new JMenuItem("Очистить и разблокировать дисциплину");
+        JMenuItem unlockDiscipline = new JMenuItem(
+                "Очистить и разблокировать дисциплину");
         unlockDiscipline.setFont(font);
         unlockDiscipline.addActionListener((event) -> unlockDisciplinePerformed());
         disciplineMenu.add(unlockDiscipline);

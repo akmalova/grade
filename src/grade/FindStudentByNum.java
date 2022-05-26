@@ -117,7 +117,8 @@ public class FindStudentByNum extends JInternalFrame {
                 String faculty = res.getString("facultyname");
                 int semesterId = res.getInt("semesterid");
                 String semester = (semesterId % 2 == 1) ? "Осень" : "Весна";
-                int year = 2014 + ((semesterId % 2 == 1) ? (semesterId - 1) : semesterId - 2) / 2;
+                int year = 2014 + ((semesterId % 2 == 1) ? (semesterId - 1) : 
+                        semesterId - 2) / 2;
                 semester += " " + year;
                 String degree = res.getString("degree");
                 switch(degree) {

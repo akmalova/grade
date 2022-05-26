@@ -14,7 +14,8 @@ public class StudentsListByGroup extends JInternalFrame {
     private Integer group;
     private int semester;
     private int degree;
-    private final String[] degreeList = {"bachelor", "master", "specialist", "postgraduate"};
+    private final String[] degreeList = {"bachelor", "master", "specialist", 
+        "postgraduate"};
     
     private JComboBox comboBox1;
     private JComboBox comboBox2;
