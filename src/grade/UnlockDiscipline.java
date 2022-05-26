@@ -10,7 +10,7 @@ public class UnlockDiscipline {
     public UnlockDiscipline() {
         
         disciplineId = JOptionPane.showInputDialog(null, 
-                "Введите идентификатор дисциплины",
+                "Введите идентификатор дисциплины\n",
                 "Очистить и разблокировать дисциплину", JOptionPane.INFORMATION_MESSAGE);
         if (disciplineId != null) {
             if (disciplineId.equals(""))
