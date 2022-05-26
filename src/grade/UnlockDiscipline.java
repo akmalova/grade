@@ -10,7 +10,7 @@ public class UnlockDiscipline {
     public UnlockDiscipline() {
         
         disciplineId = JOptionPane.showInputDialog(null, 
-                "Введите идентификатор дисциплины\n",
+                "Введите идентификатор дисциплины",
                 "Очистить и разблокировать дисциплину", JOptionPane.INFORMATION_MESSAGE);
         if (disciplineId != null) {
             if (disciplineId.equals(""))
@@ -39,7 +39,7 @@ public class UnlockDiscipline {
             else 
                 JOptionPane.showMessageDialog(null, 
                         "Дисциплина успешно очищена и разблокирована."
-                        + "Количество удаленных записей: " + result + 1, 
+                        + "\nКоличество удаленных записей: " + result + 1, 
                         "Сервис БРС", JOptionPane.INFORMATION_MESSAGE);
         } 
         catch (SQLException e) {
