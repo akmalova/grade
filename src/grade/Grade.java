@@ -177,7 +177,7 @@ public class Grade extends JFrame {
         } 
         
         catch (SQLException e) {
-            System.out.println(e.getMessage());
+            System.out.println(e);
             JOptionPane.showMessageDialog(null, 
                     "Не удалось получить список факультетов", 
                     "Сервис БРС", JOptionPane.WARNING_MESSAGE);
@@ -206,7 +206,7 @@ public class Grade extends JFrame {
         } 
         
         catch (SQLException e) {
-            System.out.println(e.getMessage());
+            System.out.println(e);
             JOptionPane.showMessageDialog(null, 
                     "Не удалось получить список семестров", 
                     "Сервис БРС", JOptionPane.WARNING_MESSAGE);

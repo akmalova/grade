@@ -198,7 +198,7 @@ public class StudentInfoByName extends JInternalFrame {
                 }
             }
         } catch (SQLException e) {
-            System.out.println(e.getMessage());
+            System.out.println(e);
             JOptionPane.showMessageDialog(null, "Не удалось выполнить поиск", 
                     "Сервис БРС", JOptionPane.WARNING_MESSAGE);
         }

@@ -11,7 +11,8 @@ public class UnlockDiscipline {
         
         disciplineId = JOptionPane.showInputDialog(null, 
                 "Введите идентификатор дисциплины",
-                "Очистить и разблокировать дисциплину", JOptionPane.INFORMATION_MESSAGE);
+                "Очистить и разблокировать дисциплину", 
+                JOptionPane.INFORMATION_MESSAGE);
         if (disciplineId != null) {
             if (disciplineId.equals(""))
                  JOptionPane.showMessageDialog(null, "Необходимо заполнить поле!", 
@@ -43,7 +44,7 @@ public class UnlockDiscipline {
                         "Сервис БРС", JOptionPane.INFORMATION_MESSAGE);
         } 
         catch (SQLException e) {
-            System.out.println(e.getMessage());
+            System.out.println(e);
             JOptionPane.showMessageDialog(null, 
                     "Не удалось очистить и разблокировать дисциплину", 
                     "Сервис БРС", JOptionPane.WARNING_MESSAGE);

@@ -25,9 +25,8 @@ public class Login extends JFrame {
     }
     
     public Login() {
-        
-        initUI();
         readUrl();
+        initUI();
     }
     
     private void initUI() {
